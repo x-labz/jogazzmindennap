@@ -18,6 +18,7 @@ const processHashChange = () => {
   container.innerHTML = Handlebars.templates[page + ".hbs"]({
     flags: { mode_youtube_auth: true },
     items: jmn.videoList,
+    images: jmn.tabor,
   });
 
   window.scrollTo(0, 0);
