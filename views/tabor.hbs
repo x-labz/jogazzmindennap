@@ -1,0 +1,112 @@
+<div class="container">
+  <div class="section">
+    <div class="row">
+
+      <div class="row">
+        <h5 class="light">Jógatábor kezdőknek és haladóknak</h5>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <p class="">
+            Következő időpont: 2022. szeptember 30. - október 3.
+          </p>
+          <p>
+            Helyszín: Mánfai Elvonulási Központ és Alkotóház (M.E.K.A.)
+          </p>
+          <p class="light justify-text">
+            Aminek ellenállsz, megerősödik. Négynapos jógahétvégén az elfogadást fogjuk gyakorolni, mert az elfogadás ez
+            egyetlen jó válasz bármely helyzetre, a változások csak onnan tudnak elindulni.
+            Tölts velünk négy napot M.E.K.A.-ban!
+          </p>
+
+          <h5 class="light">Programok:</h5>
+
+          <ul>
+            <li class="light">
+              Napi két jógaóra
+            </li>
+            <li class="light">
+              Élőzenés gyakorlás
+            </li>
+            <li class="light">
+              Meditáció, hangfürdő, mantrázás
+            </li>
+            <li class="light">
+              Kirándulás
+            </li>
+            <li class="light">
+              Légzőgyakorlatok
+            </li>
+            <li class="light">
+              Technikák, hogy hogyan figyeljünk oda a megérzéseinkre
+            </li>
+          </ul>
+
+        </div>
+        <div class="col s12 m6">
+          <p>
+            <img class="  responsive-img img-border" style="margin-top: 5px;" src="img/tabor_2022_09.jpg">
+          </p>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <p class="center-text">
+          <a class="cta-1" href="#jelentkezes">Jelentkezem a táborba!</a>
+        </p>
+      </div>
+
+
+
+      <div class="row">
+        <div class="">
+          <h5 class="light">Jógatábor ára:</h5>
+          <p class="light justify-text">
+            Részvételi díj: 75.000 Ft, amelyből az előleg: 40.000 Ft
+          </p>
+
+          <h5 class="light">Szállás:</h5>
+          <p class="light justify-text">
+            Elhelyezés 2-3-4 ágyas szobákban.
+          </p>
+
+          <h5 class="light">Étkezés:</h5>
+          <p class="light justify-text">
+            Napi háromszori vegetáriánus étkezés, amiről közeli ismerősünk, <a target="_blank"
+              href="https://www.facebook.com/profile.php?id=100063496174880"><b>Molnár Dóra</b></a> fog gondoskodni.
+          </p>
+        </div>
+
+        <div class=" center-text">
+          <p>
+            <img class="  responsive-img img-border" style="margin-top: 5px;" width="512px" src="img/meka_2022_09.jpg">
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <h5 class="light">A tábort vezeti</h5>
+        {{> czs_kz.hbs}}
+      </div>
+
+    </div>
+  </div>
+  <div class="section">
+    <div class="row">
+      <h5 class="light">Nézz bele a tavaszi táborunkba</h5>
+    </div>
+
+    <div class="row">
+
+      {{#each images }}
+      <div class="col s12 m6">
+
+        <img class="responsive-img img-border" style="margin-top: 5px;" loading="lazy" width="512px" height="342px" src="img/tabor/{{this}}">
+
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>

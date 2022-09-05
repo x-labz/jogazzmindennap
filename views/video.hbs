@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="section">
+
+    <div class="row">
+      <h5 class="light">Jóga videók</h5>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <div class="videos">
+          {{#each items}}
+            <div>
+              <div class="thumb img-border">
+
+              </div>
+              <p class="desc">{{this.title}}</p>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="display: none;">
+  <div id="player"></div>
+</div>
+
+<div class="modal" onClick="Y.closeModal()">
+  <div class="modal-content">
+    <p>A prémium videókhoz tőlem kérhetsz hozzáférést, vedd fel velem a
+      kapcsolatot az elérhetőségek egyikén.</p>
+    {{#if flags.mode_youtube_auth}}
+      <p>Ha már kaptál jogosultságot, ne felejts el bejelentkezni a google
+        fiókodba!</p>
+      <a
+        href="https://myaccount.google.com"
+        class="waves-effect waves-light btn"
+      >Bejelentkezés</a>
+    {{/if}}
+    <div class="footer">
+      bezárás
+    </div>
+  </div>
+</div>
+
+{{!-- <script>
+  var Y = { videos:
+  {{{json items}}}
+  }
+</script> --}}
+
+<!--  Scripts-->
