@@ -15,10 +15,10 @@ const processHashChange = () => {
   const isLink = page.substring(0, 2) !== "a-";
   if (!isLink) return;
 
-  let renderFn = Handlebars.templates[page + ".hbs"];
+  const renderFn = Handlebars.templates[page + ".hbs"];
 
   if (!renderFn) {
-    renderFn = Handlebars.templates["aktualis.hbs"];
+    location.href = `https://${location.hostname}`;
   }
 
   container.innerHTML = renderFn({
