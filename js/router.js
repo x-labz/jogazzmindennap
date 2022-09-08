@@ -15,7 +15,13 @@ const processHashChange = () => {
   const isLink = page.substring(0, 2) !== "a-";
   if (!isLink) return;
 
-  container.innerHTML = Handlebars.templates[page + ".hbs"]({
+  let renderFn = Handlebars.templates[page + ".hbs"];
+
+  if (!renderFn) {
+    renderFn = Handlebars.templates["aktualis.hbs"];
+  }
+
+  container.innerHTML = renderFn({
     flags: { mode_youtube_auth: true },
     items: jmn.videoList,
     images: jmn.tabor,
