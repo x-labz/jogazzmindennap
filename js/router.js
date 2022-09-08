@@ -18,7 +18,9 @@ const processHashChange = () => {
   const renderFn = Handlebars.templates[page + ".hbs"];
 
   if (!renderFn) {
-    location.href = `https://${location.hostname}`;
+    console.log("page not found", page);
+    location.href = "/";
+    return;
   }
 
   container.innerHTML = renderFn({
