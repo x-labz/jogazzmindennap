@@ -15,6 +15,10 @@ iframe {
   position: static;
 }
 
+#pageContent {
+  min-height: 200px;
+}
+
 .img-border {
   border: 1px solid lightgray;
   padding: 20px;
