@@ -1,5 +1,9 @@
 {
+  "root": "/",
   "dependencies": {
     "handlebars": "^4.7.7"
+  },
+  "scripts": {
+    "compile_templates": "handlebars ./views/*.hbs -f ./js/templates.js"
   }
 }
