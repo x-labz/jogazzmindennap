@@ -63,9 +63,10 @@ Y.closeModal = () => {
 //     ${item.duration === 0 ? '<div class="cover" onClick="Y.openModal()"><i class="icon-lock locked"></></div>' : ''}
 //     ${item.duration === undefined ? '<div class="cover"><div class="lds-dual-ring"></div></div>' : ''}`
 
-Y.renderItem = (item) => `${item.youtube ? `<a target="_blank" href="https://www.youtube.com/watch?v=${item.youtube}">` : ''}<img width="320px" height="180px" class="responsive-img" src="/thumbs/jv${item.id}tn.jpg">${item.youtube ? '</a>' : ''}
-    ${!item.youtube  ? '<div class="cover" onClick="Y.openModal()"><i class="icon-lock locked"></></div>' : ''}`
- 
+Y.renderItem = (item) => `${item.youtube ? `<a target="_blank" href="https://www.youtube.com/watch?v=${item.youtube}">` : ''}
+<img width="320px" height="180px" class="responsive-img" src="/thumbs/jv${item.id}tn.${item.ext || 'jpg'}">${item.youtube ? '</a>' : ''}
+    ${!item.youtube ? '<div class="cover" onClick="Y.openModal()"><i class="icon-lock locked"></></div>' : ''}`
+
 
 Y.renderList = () => {
     document.querySelectorAll('.videos .thumb').forEach((item, idx) => {

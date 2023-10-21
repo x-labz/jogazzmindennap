@@ -188,7 +188,18 @@ window.jmn = {
       { title: "Emelkedj - belső tűz", youtube: "wfWW5F0M7Gg", id: 77 },
       { title: "Emelkedj - szívüdvözlet", youtube: "eEhj0Uqb1yg", id: 78 },
       { title: "Emelkedj - szárnyalj", youtube: "cxWKQCwUCj8", id: 79 },
-      { title: "Emelkedj - ég és föld", youtube: "QlzgQwtplZ4", id: 80 }].reverse())
+      { title: "Emelkedj - ég és föld", youtube: "QlzgQwtplZ4", id: 80 },
+      { title: "Fascia a jógában 1. Hátulsó láncolat", youtube: "cp2RRVHLwp0 ", id: 81, ext:'webp'},
+      { title: "Fascia a jógában 2. Elülső láncolat", youtube: "CT9BYwKNHBU", id: 82, ext:'webp'},
+      { youtube: "NuXbYNQzZ0U", title: "Fascia a jógában 3. Oldalsó láncolat", id: 83, ext:'webp'},
+      { youtube: "lRGmWBAlkQI", title: "Fascia a jógában 4. Spirális láncolat", id: 84, ext:'webp'},
+      { youtube: "aV3Y2pA2AeM", title: "Fascia a jógában 5. Mély nyitás", id: 85, ext:'webp'},
+      { youtube: "F9Mg6NdIt_4", title: "Fascia a jógában 6. Mély erő", id: 86, ext:'webp'},
+      { youtube: "fPLhA7vSMIQ", title: "Fascia a jógában 7. Funkcionális és karvonalak", id: 87, ext:'webp'}
+    
+    
+    
+    ].reverse())
 
     // regexp '.[^']+'
     .map((item) => ({ ...item, title: `${item.id}. ${item.title}` })),

@@ -65,7 +65,7 @@ Y.renderItem = (item) => `${
 }
     <img width="320px" height="180px" class="responsive-img" src="thumbs/jv${
       item.id
-    }tn.jpg">
+    }tn.${ item.ext  || 'jpg'}">
     ${item.youtube ? "</a>" : ""}
     ${
       item.duration === 0
