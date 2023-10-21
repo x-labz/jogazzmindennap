@@ -195,7 +195,22 @@ window.jmn = {
       { youtube: "lRGmWBAlkQI", title: "Fascia a jógában 4. Spirális láncolat", id: 84, ext:'webp'},
       { youtube: "aV3Y2pA2AeM", title: "Fascia a jógában 5. Mély nyitás", id: 85, ext:'webp'},
       { youtube: "F9Mg6NdIt_4", title: "Fascia a jógában 6. Mély erő", id: 86, ext:'webp'},
-      { youtube: "fPLhA7vSMIQ", title: "Fascia a jógában 7. Funkcionális és karvonalak", id: 87, ext:'webp'}
+      { youtube: "fPLhA7vSMIQ", title: "Fascia a jógában 7. Funkcionális és karvonalak", id: 87, ext:'webp'},
+
+      { youtube: "L-C42n7AH6I", title: "Újévi áramlás - kilégzés", id: 88, ext:'webp'},
+      { youtube: "BrEYkGKoFPs", title: "Újévi áramlás - belégzés", id: 89, ext:'webp'},
+      { youtube: "Dx3veVV8l30", title: "Újévi áramlás - csakraflow", id: 90, ext:'webp'},
+      { youtube: "9fsoHWck74Y", title: "Újévi áramlás - slow-flow", id: 91, ext:'webp'},
+      { youtube: "-aSb7YTsg2s", title: "Újévi áramlás - szemgyakorlás", id: 92, ext:'webp'},
+      { youtube: "f5JilO7CR6M", title: "Újévi áramlás - távolítók", id: 93, ext:'webp'},
+
+      { youtube: "BYTKLmeMOvc", title: "Égi erő - áldás slowflow", id: 94, ext:'webp'},
+      { youtube: "PCUTqE97EfI", title: "Életút -  slowflow", id: 95, ext:'webp'},
+      { youtube: "9wUMd6nYlyY", title: "Hála - slowflow", id: 96, ext:'webp'},
+      { youtube: "NrCMJQrjr2U", title: "Belső erő - slowflow", id: 97, ext:'webp'},
+      { youtube: "y8glV_SVjpk", title: "Hold gyakorlás - slowflow", id: 98, ext:'webp'},
+      { youtube: "aZL-wJXTXFA", title: "Nyugalom - slowflow", id: 99, ext:'webp'},
+
     
     
     
