@@ -219,37 +219,13 @@ window.jmn = {
     // regexp '.[^']+'
     .map((item) => ({ ...item, title: `${item.id}. ${item.title}` })),
   tabor: [
-    "Dömös 2022-16.webp",
-    "Dömös 2022-17 (1).webp",
-    "Dömös 2022-18.webp",
-    "Dömös 2022-20.webp",
-
-    "Dömös 2022-21 (1).webp",
-    "Dömös 2022-25 (1).webp",
-
-    "Dömös 2022-27 (1).webp",
-    "Dömös 2022-28.webp",
-
-    "Dömös 2022-31 (1).webp",
-    "Dömös 2022-33 (1).webp",
-
-    "Dömös 2022-36 (1).webp",
-    "Dömös 2022-39.webp",
-
-    "Dömös 2022-40.webp",
-    "Dömös 2022-34.webp",
-
-    "Dömös 2022-43.webp",
-    "Dömös 2022-44 (1).webp",
-
-    "Dömös 2022-48.webp",
-    "Dömös 2022-49 (1).webp",
-
-    "Dömös 2022-6 (1).webp",
-    "Dömös 2022-19 (1).webp",
-    "Dömös 2022-24.webp",
-    "Dömös 2022-26 (1).webp",
-    "Dömös 2022-30.webp",
-    "Dömös 2022-41 (1).webp",
+    "1.webp",
+    "2.webp",
+    "3.webp",
+    "5.webp",
+    "6.webp",
+    "7.webp",
+    "8.webp",
+    "4.webp",
   ],
 };
