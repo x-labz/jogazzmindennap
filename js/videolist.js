@@ -210,10 +210,18 @@ window.jmn = {
       { youtube: "NrCMJQrjr2U", title: "Belső erő - slowflow", id: 97, ext:'webp'},
       { youtube: "y8glV_SVjpk", title: "Hold gyakorlás - slowflow", id: 98, ext:'webp'},
       { youtube: "aZL-wJXTXFA", title: "Nyugalom - slowflow", id: 99, ext:'webp'},
-
-    
-    
-    
+      { youtube: "ylIsVTv9_sI", title: "Csúcsászanák 1: parivrtta koundinyászana", id: 100, ext:'webp'},
+      { youtube: "CSDGnC8TmYI", title: "Csúcsászanák 2: astavakrászana", id: 101, ext:'webp'},
+      { youtube: "PTQndKxTzwE", title: "Csúcsászanák 3: kézenállás", id: 103, ext:'webp'},
+      { youtube: "UHwqiTsZ8xE", title: "Csúcsászanák 4: spárga", id: 104, ext:'webp'},
+      { youtube: "eJGFig1ATZ8", title: "Csúcsászanák 5: zászló", id: 105, ext:'webp'},
+      { youtube: "QTLP022m4bg", title: "Csúcsászanák 6. Híd", id: 106, ext:'webp'},
+      { youtube: "tGTLIKwMPpU", title: "Flow-time 1 Ganesha gyakorlás", id: 107, ext:'webp'},
+      { youtube: "WfTb3ALTVjo", title: "Flow-time 2 alkarállás", id: 108, ext:'webp'},
+      { youtube: "IP9p4WQtcu8", title: "Flow-time 3 szeretet flow", id: 109, ext:'webp'},
+      { youtube: "QIjoLwhBgS8", title: "Flow-time 4 yin-yang flow", id: 110, ext:'webp'},
+      { youtube: "NjDR-GEzVgw", title: "Flow-time 5 yin-flow", id: 111, ext:'webp'},
+      { youtube: "4bZtrCcIeg4", title: "Flow-time 6 paradicsommadár", id: 112, ext:'webp'},
     ].reverse())
 
     // regexp '.[^']+'
