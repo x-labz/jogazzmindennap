@@ -222,6 +222,21 @@ window.jmn = {
       { youtube: "QIjoLwhBgS8", title: "Flow-time 4 yin-yang flow", id: 110, ext:'webp'},
       { youtube: "NjDR-GEzVgw", title: "Flow-time 5 yin-flow", id: 111, ext:'webp'},
       { youtube: "4bZtrCcIeg4", title: "Flow-time 6 paradicsommadár", id: 112, ext:'webp'},
+      { youtube: "1yDksvXLBMc", title: "Stabilitás flow", id: 113, ext:'webp'},
+      { youtube: "HfxOeAZpCEg", title: "Bátorság flow", id: 114, ext:'webp'},
+      { youtube: "1bC_a4SipE0", title: "Békés harcos flow", id: 115, ext:'webp'},
+      { youtube: "dcyB-wFPRDk", title: "Kamatkarászana", id: 116, ext:'webp'},
+      { youtube: "-kit2bO4Cro", title: "Szamakónászana flow", id: 117, ext:'webp'},
+      { youtube: "g5ArJznKdDc", title: "Fókusz - figyelem", id: 118, ext:'webp'},
+      { youtube: "cLofVB7Fri4", title: "Fókusz - nyitottság", id: 119, ext:'webp'},
+      { youtube: "ljJu-95tG9s", title: "Fókusz - Lélek fénye", id: 120, ext:'webp'},
+      { youtube: "Y5GWp0N6nB8", title: "Fókusz - Jelenlét", id: 121, ext:'webp'},
+      { youtube: "s7yZN0JOq-c", title: "Fókusz - földelj", id: 122, ext:'webp'},
+      { youtube: "pe4PwUNZhf4", title: "Morning flow - hála", id: 123, ext:'webp'},
+      { youtube: "CkR5YLtgfCU", title: "Morning flow - energia", id: 124, ext:'webp'},
+      { youtube: "lUfvdVvkjg0", title: "Morning flow - jelenlét", id: 125, ext:'webp'},
+      { youtube: "nGXFynbr-Ns", title: "Morning flow - teremtés", id: 126, ext:'webp'},
+      { youtube: "0Js7R_n9w0", title: "Morning flow - üdvözletek", id: 127, ext:'webp'},
     ].reverse())
 
     // regexp '.[^']+'
