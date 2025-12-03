@@ -251,4 +251,7 @@ window.jmn = {
     "8.webp",
     "4.webp",
   ],
+  fasciaFlowList: [
+    { title: "Fascia a jógában 1. Hátulsó láncolat", youtube: "cp2RRVHLwp0 ", id: 81, ext:'webp'},
+  ],
 };

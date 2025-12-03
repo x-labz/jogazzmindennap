@@ -5,6 +5,7 @@ const { jmn } = window;
 
 const pageScripts = {
   video: jmn.Y.render,
+  fasciaflow: jmn.Y.render,
 };
 
 const processHashChange = () => {
@@ -23,9 +24,12 @@ const processHashChange = () => {
     return;
   }
 
+  // Use fasciaFlowList for fasciaflow page, otherwise use videoList
+  const items = page === 'fasciaflow' ? jmn.fasciaFlowList : jmn.videoList;
+
   container.innerHTML = renderFn({
     flags: { mode_youtube_auth: true },
-    items: jmn.videoList,
+    items: items,
     images: jmn.tabor,
   });
 

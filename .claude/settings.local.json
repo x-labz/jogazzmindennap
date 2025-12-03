@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run compile_templates:*)",
+      "Bash(npx handlebars:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
