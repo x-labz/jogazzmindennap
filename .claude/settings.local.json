@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(npm run compile_templates:*)",
-      "Bash(npx handlebars:*)"
+      "Bash(npx handlebars:*)",
+      "Bash(git restore:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(node -e:*)"
     ],
     "deny": [],
     "ask": []

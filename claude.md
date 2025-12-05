@@ -6,6 +6,9 @@ This is a single-page application (SPA) website for Czvikli Zsuzsanna, a profess
 
 **Live URL:** www.jogazzmindennap.online (translates to "Yoga Every Day")
 
+## file manipulation
+use relative paths instead of absolute
+
 ## Technologies Used
 
 ### Frontend

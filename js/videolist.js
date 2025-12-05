@@ -252,6 +252,12 @@ window.jmn = {
     "4.webp",
   ],
   fasciaFlowList: [
-    { title: "Fascia a jógában 1. Hátulsó láncolat", youtube: "cp2RRVHLwp0 ", id: 81, ext:'webp'},
+    { title: "1. Lélegző fascia - mini újrahangolás 11'", youtube: "iI2jLQmxuiU", id: 128, ext:'webp'},
+    { title: "2. Fascia flow - áramlásba érkezés 21'", youtube: "jZj6vhC2exc", id: 129, ext:'webp'},
+    { title: "3. Belső tér kinyitása - Teljes fascia átmozgatás 42'", youtube: "pvO6zwRIPd4", id: 130, ext:'webp'},
+    { title: "4. Test-lélek mély regeneráló flow 33'", youtube: "QQNH3pYVdik", id: 131, ext:'webp'},
+    { title: "5. Gyökértől a gerincig fascia flow 42'", youtube: "ml53xdD84vs", id: 132, ext:'webp'},
+    { title: "6. Fascia lift - könnyedség és erő (fejenállással) 19'", youtube: "wkiMXpfYJ5U", id: 133, ext:'webp'},
+    { title: "7. Fascia - egy kis elmélet", youtube: "NWyTmTldqxU", id: 134, ext:'jpg'},
   ],
 };

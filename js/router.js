@@ -36,7 +36,7 @@ const processHashChange = () => {
   window.scrollTo(0, 0);
 
   if (pageScripts[page]) {
-    pageScripts[page]();
+    pageScripts[page](items);
   }
 };
 
