@@ -78,15 +78,9 @@ Y.renderItem = (item) => `${item.youtube
   }
     <img width="320px" height="180px" class="responsive-img" src="thumbs/jv${item.id
   }tn.${item.ext || 'jpg'}">
-    ${item.youtube ? "</a>" : ""}
-    ${item.duration === 0
-    ? '<div class="cover" onClick="Y.openModal()"></div><i class="icon-lock locked"></i>'
-    : ""
-  }
-    ${item.duration === undefined
-    ? '<div class="cover active"><div class="lds-dual-ring"></div></div>'
-    : ""
-  }`;
+    ${item.youtube ? "</a>" : ""}`
+
+
 
 Y.renderList = (forced) => {
   document.querySelectorAll(".videos .thumb").forEach((item, idx) => {

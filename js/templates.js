@@ -81,11 +81,11 @@ templates['video.hbs'] = template({"1":function(container,depth0,helpers,partial
         return undefined
     };
 
-  return "            <div>\n              <div class=\"thumb img-border\">\n\n              </div>\n              <p class=\"desc\">"
+  return "          <div>\n            <div class=\"thumb img-border\">\n\n            </div>\n            <p class=\"desc\">"
     + container.escapeExpression(container.lambda((depth0 != null ? lookupProperty(depth0,"title") : depth0), depth0))
-    + "</p>\n            </div>\n";
+    + "</p>\n          </div>\n";
 },"3":function(container,depth0,helpers,partials,data) {
-    return "      <p>Ha már kaptál jogosultságot, ne felejts el bejelentkezni a google\n        fiókodba!</p>\n      <a\n        href=\"https://myaccount.google.com\"\n        class=\"waves-effect waves-light btn\"\n      >Bejelentkezés</a>\n";
+    return "    <p>Ha már kaptál jogosultságot, ne felejts el bejelentkezni a google\n      fiókodba!</p>\n    <a href=\"https://myaccount.google.com\" class=\"waves-effect waves-light btn\">Bejelentkezés</a>\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -94,10 +94,10 @@ templates['video.hbs'] = template({"1":function(container,depth0,helpers,partial
         return undefined
     };
 
-  return "<div class=\"container\">\n  <div class=\"section\">\n\n    <div class=\"row\">\n      <h5 class=\"light\">Jóga videók</h5>\n    </div>\n    <div class=\"row\">\n      <div class=\"col s12\">\n        <div class=\"videos\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"items") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":10,"column":10},"end":{"line":17,"column":19}}})) != null ? stack1 : "")
+  return "<div class=\"container\">\n  <div class=\"section\">\n\n    <div class=\"row\">\n      <h5 class=\"light\">Jóga videók</h5>\n    </div>\n    <div class=\"row\">\n      <div class=\"col s12\">\n\n        <p>A prémium videókhoz tőlem kérhetsz hozzáférést, vedd fel velem a\n          kapcsolatot az elérhetőségek egyikén.</p>\n\n        <p>Ha már kaptál jogosultságot, ne felejts el bejelentkezni a google\n          fiókodba! 👉<a href=\"https://myaccount.google.com\" >Bejelentkezés</a></p>\n        \n        \n        <div class=\"videos\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"items") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":18,"column":10},"end":{"line":25,"column":19}}})) != null ? stack1 : "")
     + "        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<div style=\"display: none;\">\n  <div id=\"player\"></div>\n</div>\n\n<div class=\"modal\" onClick=\"Y.closeModal()\">\n  <div class=\"modal-content\">\n    <p>A prémium videókhoz tőlem kérhetsz hozzáférést, vedd fel velem a\n      kapcsolatot az elérhetőségek egyikén.</p>\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"flags") : depth0)) != null ? lookupProperty(stack1,"mode_youtube_auth") : stack1),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":31,"column":4},"end":{"line":38,"column":11}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"flags") : depth0)) != null ? lookupProperty(stack1,"mode_youtube_auth") : stack1),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":39,"column":4},"end":{"line":43,"column":11}}})) != null ? stack1 : "")
     + "    <div class=\"footer\">\n      bezárás\n    </div>\n  </div>\n</div>\n\n\n<!--  Scripts-->";
 },"useData":true});
 })();

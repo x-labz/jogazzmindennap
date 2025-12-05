@@ -6,14 +6,22 @@
     </div>
     <div class="row">
       <div class="col s12">
+
+        <p>A prémium videókhoz tőlem kérhetsz hozzáférést, vedd fel velem a
+          kapcsolatot az elérhetőségek egyikén.</p>
+
+        <p>Ha már kaptál jogosultságot, ne felejts el bejelentkezni a google
+          fiókodba! 👉<a href="https://myaccount.google.com" >Bejelentkezés</a></p>
+        
+        
         <div class="videos">
           {{#each items}}
-            <div>
-              <div class="thumb img-border">
+          <div>
+            <div class="thumb img-border">
 
-              </div>
-              <p class="desc">{{this.title}}</p>
             </div>
+            <p class="desc">{{this.title}}</p>
+          </div>
           {{/each}}
         </div>
       </div>
@@ -29,12 +37,9 @@
     <p>A prémium videókhoz tőlem kérhetsz hozzáférést, vedd fel velem a
       kapcsolatot az elérhetőségek egyikén.</p>
     {{#if flags.mode_youtube_auth}}
-      <p>Ha már kaptál jogosultságot, ne felejts el bejelentkezni a google
-        fiókodba!</p>
-      <a
-        href="https://myaccount.google.com"
-        class="waves-effect waves-light btn"
-      >Bejelentkezés</a>
+    <p>Ha már kaptál jogosultságot, ne felejts el bejelentkezni a google
+      fiókodba!</p>
+    <a href="https://myaccount.google.com" class="waves-effect waves-light btn">Bejelentkezés</a>
     {{/if}}
     <div class="footer">
       bezárás
@@ -42,9 +47,11 @@
   </div>
 </div>
 
-{{!-- <script>
-  var Y = { videos:
-  {{{json items}}}
+{{!--
+<script>
+  var Y = {
+    videos:
+      {{{ json items }}}
   }
 </script> --}}
 
