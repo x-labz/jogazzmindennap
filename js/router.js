@@ -25,7 +25,7 @@ const showLanding = () => {
   if (landingSections) landingSections.classList.remove("hidden");
   container.innerHTML = "";
   document.body.classList.remove("spa-active");
-  document.title = "Jógázz minden nap – Jóga Budapest & Online";
+  document.title = "Jógázz minden nap | Czvikli Zsuzsanna jógaoktató";
   window.scrollTo(0, 0);
   resetNavScroll();
 };
