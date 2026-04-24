@@ -813,6 +813,7 @@ html.is-spa-page #pageContent:empty + footer {
 }
 
 
+#pageContent h1.light,
 #pageContent h4.light,
 #pageContent h5.light {
   font-family: var(--font-heading) !important;

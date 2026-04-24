@@ -4,6 +4,8 @@
     "handlebars": "^4.7.7"
   },
   "scripts": {
-    "compile_templates": "node build-templates.js"
+    "compile_templates": "node build-templates.js",
+    "build_routes": "node build-routes.js",
+    "build": "node build-templates.js && node build-routes.js"
   }
 }
