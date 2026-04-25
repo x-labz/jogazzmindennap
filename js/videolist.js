@@ -189,7 +189,7 @@ window.jmn = {
       { title: "Emelkedj - szívüdvözlet", youtube: "eEhj0Uqb1yg", id: 78 },
       { title: "Emelkedj - szárnyalj", youtube: "cxWKQCwUCj8", id: 79 },
       { title: "Emelkedj - ég és föld", youtube: "QlzgQwtplZ4", id: 80 },
-      { title: "Fascia a jógában 1. Hátulsó láncolat", youtube: "cp2RRVHLwp0 ", id: 81, ext:'webp'},
+      { title: "Fascia a jógában 1. Hátulsó láncolat", youtube: "cp2RRVHLwp0", id: 81, ext:'webp'},
       { title: "Fascia a jógában 2. Elülső láncolat", youtube: "CT9BYwKNHBU", id: 82, ext:'webp'},
       { youtube: "NuXbYNQzZ0U", title: "Fascia a jógában 3. Oldalsó láncolat", id: 83, ext:'webp'},
       { youtube: "lRGmWBAlkQI", title: "Fascia a jógában 4. Spirális láncolat", id: 84, ext:'webp'},

@@ -1,0 +1,5 @@
+npm install
+npm run compile_templates
+npm run build_routes
+npm run build
+node verify.js

@@ -85,21 +85,29 @@ document.addEventListener('DOMContentLoaded', () => {
         reveals.forEach(el => el.classList.add('visible'));
     }
 
-    // ═══════ Smooth scroll for anchor links on landing ═══════
+    // ═══════ Smooth scroll for anchor links ═══════
     document.addEventListener('click', (e) => {
         const link = e.target.closest('a[href^="#"]');
         if (!link) return;
         const href = link.getAttribute('href');
         if (!href || href === '#') return;
-        // Only handle in-page anchors (like #about, #services), not SPA routes
-        // SPA routes are handled by router.js hashchange
-        // Landing section IDs: landing-about, landing-services, etc. won't conflict
+
         const target = document.querySelector(href);
-        if (target && document.getElementById('landingSections') && !document.getElementById('landingSections').classList.contains('hidden')) {
+        if (!target) return;
+
+        // Check if target is hidden (e.g. inside hidden landingSections)
+        const isTargetHidden = target.closest('.hidden') || getComputedStyle(target).display === 'none';
+
+        if (!isTargetHidden) {
             e.preventDefault();
+            e.stopPropagation(); // prevent router.js from handling it
             const navH = navbar ? navbar.offsetHeight : 70;
             const top = target.getBoundingClientRect().top + window.pageYOffset - navH - 20;
             window.scrollTo({ top: top, behavior: 'smooth' });
+        } else {
+            // If target is hidden (we are on a SPA page but link is for landing), navigate to home
+            e.preventDefault();
+            window.location.href = "/" + href;
         }
     });
 });
