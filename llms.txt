@@ -24,10 +24,14 @@
 - [Jóga videók](https://www.jogazzmindennap.hu/video): 130+ felvett, magyar nyelvű jógaóra – otthoni gyakorláshoz, bármikor, bármilyen eszközön.
 - [Fascia flow](https://www.jogazzmindennap.hu/fasciaflow): Fasciális jógaterápia – a kötőszövet és az ízületek mélyebb megközelítése.
 - [Kezelések](https://www.jogazzmindennap.hu/manual): Egyéni manuálterápia, fasciális arcterápia, integrált kezelések.
-- [Képzés](https://www.jogazzmindennap.hu/kepzes): Fascia a jógában – akkreditált oktatói továbbképzés jógaoktatóknak.
+- [Képzés](https://www.jogazzmindennap.hu/kepzes): 100 órás akkreditált Flow Jóga oktatói továbbképzés és Fascia a jógában képzés jógaoktatóknak.
 - [Tábor](https://www.jogazzmindennap.hu/tabor): Jóga, önismeret és meditáció elvonulás – évente megrendezett tábor.
 - [Access Bars®](https://www.jogazzmindennap.hu/bars): Access Bars® energetikai kezelés leírása és időpontfoglalás.
 - [E-book](https://www.jogazzmindennap.hu/ebook): Letölthető jóga e-book otthoni gyakorláshoz.
+- [Jelentkezés](https://www.jogazzmindennap.hu/jelentkezes): Jelentkezés eseményekre és programokra, utalási adatok.
+- [JEM](https://www.jogazzmindennap.hu/jem): Jógaéletmód motiváció – inspiráló gondolatok a rendszeres gyakorlásról.
+- [Adatvédelem](https://www.jogazzmindennap.hu/privacy): Adatvédelmi irányelvek és tájékoztató.
+- [Credits](https://www.jogazzmindennap.hu/credits): Oldal készítői és hivatkozások.
 
 ## Szolgáltatások (Services)
 
