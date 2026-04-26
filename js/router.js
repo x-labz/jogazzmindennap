@@ -1,8 +1,19 @@
-const STARTPAGE = "aktualis";
-
 let container;
 let landingSections;
 const { jmn } = window;
+const JMN_SEO = window.JMN_SEO || {
+  getPageMeta: function () {
+    return {
+      title: document.title,
+      description: "",
+      canonical: location.href,
+      image: "",
+    };
+  },
+  getStructuredData: function () {
+    return null;
+  },
+};
 
 const pageScripts = {
   video: jmn.Y.render,
@@ -14,69 +25,8 @@ const VALID_PAGES = [
   "manual","kepzes","tabor","bars","jelentkezes",
   "jem","credits","privacy","ebook"
 ];
-
-const BASE_URL = "https://www.jogazzmindennap.hu";
-
-const PAGE_META = {
-  "": {
-    title: "Jógázz minden nap | Czvikli Zsuzsanna jógaoktató",
-    description: "Jóga Budapesten és online - Czvikli Zsuzsanna, 30 év tapasztalat. Hatha, Flow, Ashtanga, Vinyasa. Fasciális jógaterápia, arcterápia. Samadhi Jóga Stúdió.",
-    canonical: BASE_URL + "/",
-  },
-  aktualis: {
-    title: "Aktuális események | Czvikli Zsuzsanna",
-    description: "Aktuális jóga események, online sorozatok, képzések és elvonulások Czvikli Zsuzsannával.",
-    canonical: BASE_URL + "/aktualis",
-  },
-  orak: {
-    title: "Jógaórák | Czvikli Zsuzsanna",
-    description: "Flow jóga Budapesten és online. Csoportos jógaórák, Kreatív Tavaszi Flow online sorozat. Samadhi Jóga Stúdió, Budapest XIII. ker.",
-    canonical: BASE_URL + "/orak",
-  },
-  kepzes: {
-    title: "Jógaoktató képzés | Czvikli Zsuzsanna",
-    description: "100 órás akkreditált Flow Jóga oktatói képzés és Fascia a jógában továbbképzés jógaoktatóknak. Budapest, Samadhi Jóga Stúdió.",
-    canonical: BASE_URL + "/kepzes",
-  },
-  manual: {
-    title: "Kezelések | Czvikli Zsuzsanna",
-    description: "Fasciális arcterápia, fasciális jógaterápia és integrált manuális terápia. Budapest, XIII. ker., VI. ker., Csömör.",
-    canonical: BASE_URL + "/manual",
-  },
-  rolam: {
-    title: "Rólam | Czvikli Zsuzsanna jógaoktató",
-    description: "Czvikli Zsuzsanna jógaoktató, 30 év tapasztalattal. Fasciális jógaterapeuta, integrál tanácsadó. Hatha, Flow, Ashtanga, Vinyasa.",
-    canonical: BASE_URL + "/rolam",
-  },
-  tabor: {
-    title: "Jóga elvonulás | Czvikli Zsuzsanna",
-    description: "Jóga, önismeret és meditáció elvonulás. Többnapos tábor jógával, meditációval és önismereti programokkal.",
-    canonical: BASE_URL + "/tabor",
-  },
-  video: {
-    title: "Jóga videók | Czvikli Zsuzsanna",
-    description: "130+ jóga videó magyarul. Hatha, Flow, Ashtanga, Vinyasa jóga videók. Korlátlan visszanézhetőség.",
-    canonical: BASE_URL + "/video",
-  },
-  fasciaflow: {
-    title: "Fascia Flow videók | Czvikli Zsuzsanna",
-    description: "Otthoni fascia flow videó csomag. Kötőszöveti mozgás és lazítás otthonról, bármikor.",
-    canonical: BASE_URL + "/fasciaflow",
-  },
-  ebook: {
-    title: "108 inspiráció e-book | Czvikli Zsuzsanna",
-    description: "108 inspiráció jógaórákhoz e-book. Jógaoktatók és gyakorlók számára.",
-    canonical: BASE_URL + "/ebook",
-  },
-  bars: {
-    title: "Access Bars kezelés | Czvikli Zsuzsanna",
-    description: "Access Bars® kezelés Budapesten. Relaxáció és stresszoldás az idegrendszer szintjén.",
-    canonical: BASE_URL + "/bars",
-  },
-};
-
-const updateMeta = (page) => {
-  const meta = PAGE_META[page || ""] || PAGE_META[""];
+const updateMeta = (page, context = {}) => {
+  const meta = JMN_SEO.getPageMeta(page);
   document.title = meta.title;
 
   let desc = document.querySelector('meta[name="description"]');
@@ -93,6 +43,32 @@ const updateMeta = (page) => {
 
   let ogUrl = document.querySelector('meta[property="og:url"]');
   if (ogUrl) ogUrl.setAttribute("content", meta.canonical);
+
+  let ogImage = document.querySelector('meta[property="og:image"]');
+  if (ogImage) ogImage.setAttribute("content", meta.image);
+
+  let twitterTitle = document.querySelector('meta[name="twitter:title"]');
+  if (twitterTitle) twitterTitle.setAttribute("content", meta.title);
+
+  let twitterDesc = document.querySelector('meta[name="twitter:description"]');
+  if (twitterDesc) twitterDesc.setAttribute("content", meta.description);
+
+  let twitterImage = document.querySelector('meta[name="twitter:image"]');
+  if (twitterImage) twitterImage.setAttribute("content", meta.image);
+
+  const structuredData = JMN_SEO.getStructuredData(page, context);
+  let schemaTag = document.getElementById("structured-data");
+
+  if (!schemaTag && structuredData) {
+    schemaTag = document.createElement("script");
+    schemaTag.type = "application/ld+json";
+    schemaTag.id = "structured-data";
+    document.head.appendChild(schemaTag);
+  }
+
+  if (schemaTag && structuredData) {
+    schemaTag.textContent = JSON.stringify(structuredData);
+  }
 };
 
 const resetNavScroll = () => {
@@ -101,6 +77,11 @@ const resetNavScroll = () => {
 };
 
 const showLanding = () => {
+  if (!landingSections || landingSections.childElementCount === 0) {
+    window.location.href = "/";
+    return;
+  }
+
   document.documentElement.classList.remove('is-spa-page');
   if (landingSections) landingSections.classList.remove("hidden");
   container.innerHTML = "";
@@ -131,7 +112,10 @@ const showSPA = (page) => {
     images: jmn.tabor,
   });
 
-  updateMeta(page);
+  updateMeta(page, {
+    items: items,
+    images: jmn.tabor,
+  });
   window.scrollTo(0, 0);
   resetNavScroll();
 
@@ -213,4 +197,3 @@ const start = () => {
 };
 
 document.addEventListener("DOMContentLoaded", start);
-

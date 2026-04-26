@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="hu" class="is-spa-page">
 
 <head>
   <base href="/" />
@@ -13,15 +13,66 @@
       }
     })();
   </script>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jógaórák | Czvikli Zsuzsanna</title>
   <meta name="description" content="Flow jóga Budapesten és online. Csoportos jógaórák, Kreatív Tavaszi Flow online sorozat. Samadhi Jóga Stúdió, Budapest XIII. ker." />
-  <meta name="keywords"
-    content="jóga Budapest, online jóga magyarul, Hatha jóga, Flow jóga, Vinyasa jóga, Ashtanga jóga, jógaoktató Budapest, Samadhi jóga stúdió, fasciális jógaterápia, fasciális arcterápia, integrál tanácsadó" />
   <meta property="og:title" content="Jógaórák | Czvikli Zsuzsanna" />
   <meta property="og:description" content="Flow jóga Budapesten és online. Csoportos jógaórák, Kreatív Tavaszi Flow online sorozat. Samadhi Jóga Stúdió, Budapest XIII. ker." />
   <meta property="og:url" content="https://www.jogazzmindennap.hu/orak" />
+  <meta property="og:image" content="https://www.jogazzmindennap.hu/img/mas_p_600x400.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jógaórák | Czvikli Zsuzsanna" />
+  <meta name="twitter:description" content="Flow jóga Budapesten és online. Csoportos jógaórák, Kreatív Tavaszi Flow online sorozat. Samadhi Jóga Stúdió, Budapest XIII. ker." />
+  <meta name="twitter:image" content="https://www.jogazzmindennap.hu/img/mas_p_600x400.jpg" />
   <link rel="canonical" href="https://www.jogazzmindennap.hu/orak" />
+  <script type="application/ld+json" id="structured-data">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Jógaórák Czvikli Zsuzsannával",
+  "url": "https://www.jogazzmindennap.hu/orak",
+  "image": "https://www.jogazzmindennap.hu/img/mas_p_600x400.jpg",
+  "description": "Flow jóga Budapesten és online. Csoportos jógaórák, Kreatív Tavaszi Flow online sorozat. Samadhi Jóga Stúdió, Budapest XIII. ker.",
+  "provider": {
+    "@type": "Person",
+    "name": "Czvikli Zsuzsanna",
+    "jobTitle": "Jógaoktató",
+    "url": "https://www.jogazzmindennap.hu/rolam",
+    "image": "https://www.jogazzmindennap.hu/img/czs_rolam.jpg",
+    "email": "mailto:czviklizsuzsanna@gmail.com",
+    "sameAs": [
+      "https://www.facebook.com/czvikliizs",
+      "https://www.instagram.com/czviklizs.yoga/"
+    ]
+  },
+  "availableLanguage": "hu",
+  "areaServed": [
+    "Budapest",
+    "Online"
+  ],
+  "serviceType": [
+    "Flow jóga",
+    "Online jóga"
+  ],
+  "availableChannel": [
+    {
+      "@type": "ServiceChannel",
+      "serviceUrl": "https://www.samadhijoga.hu",
+      "serviceLocation": {
+        "@type": "Place",
+        "name": "Samadhi Jógastúdió",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dráva utca 17.",
+          "addressLocality": "Budapest",
+          "postalCode": "1133",
+          "addressCountry": "HU"
+        }
+      }
+    }
+  ]
+}
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -59,18 +110,9 @@
   </script>
 </head>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165692815-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-
-  gtag("js", new Date());
-  gtag("config", "UA-165692815-1");
-</script>
-
-<body>
+<body class="spa-active">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKF8Z2P" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
   <nav class="navbar" id="navbar">
     <div class="navbar-container">
       <a href="/" class="navbar-logo">
@@ -111,204 +153,157 @@
     <a href="#a-kapcsolat" class="navbar-mobile-link">Kapcsolat</a>
   </div>
 
-  <div id="landingSections">
+  <div id="landingSections" class="hidden" aria-hidden="true"></div>
 
-    <section class="hero">
-      <div class="hero-inner">
-        <div class="hero-text">
-          <h1>Jóga személyesen és online <br><strong>Czvikli Zsuzsanna</strong> jógaoktató</h1>
-          <p class="hero-subtitle">Hatha · Flow · Ashtanga · Vinyasa <br>Fasciális jógaterápia · Fasciális arcterápia ·
-            Integrál tanácsadó</p>
-          <p class="hero-body">
-            Lassulj le. Kapcsolódj magaddal. Találd meg a saját ritmusodat.
-            Budapesti stúdióban személyesen, vagy online.
-            <br><br>
-            Találkozzunk egyéni foglalkozásokon, vagy csoportos órákon.
-          </p>
-          <p class="hero-subtitle">
-            30 év oktatói tapasztalat, magyar nyelven
-          </p>
-          <div class="hero-buttons">
-            <a href="/orak" class="btn-primary">Nézd meg az órákat ↓</a>
-            <a href="/video" class="btn-secondary">130+ videó csomag →</a>
-          </div>
-        </div>
-        <div class="hero-image">
-          <div class="hero-image-placeholder">
-            <img src="img/hero_zs.webp" alt="Czvikli Zsuzsanna jógaoktató" />
-          </div>
-        </div>
-      </div>
-      <div class="scroll-indicator">
-        <span>Görgess</span>
-        <div class="arrow"></div>
-      </div>
-    </section>
+  <div id="pageContent"><div class="container">
 
-    <section class="trust-bar">
-      <div class="trust-bar-inner">
-        <div class="trust-item">
-          <div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg></div><span>30 év tapasztalat</span>
-        </div>
-        <div class="trust-item">
-          <div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2">
-              <polygon points="23 7 16 12 23 17 23 7" />
-              <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
-            </svg></div><span>130+ jóga videó</span>
-        </div>
-        <div class="trust-item">
-          <div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-              <circle cx="12" cy="10" r="3" />
-            </svg></div><span>Samadhi Jóga Stúdió, Budapest</span>
-        </div>
-        <div class="trust-item">
-          <div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2">
-              <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9" />
-              <path d="M13.73 21a2 2 0 01-3.46 0" />
-            </svg></div><span>Hatha · Flow · Ashtanga</span>
-        </div>
-      </div>
-    </section>
 
-    <section class="landing-about" id="landing-about">
-      <div class="landing-about-inner">
-        <div class="landing-about-photo reveal">
-          <img src="img/czs_rolam.jpg" alt="Czvikli Zsuzsanna portré" />
-        </div>
-        <div class="landing-about-text reveal">
-          <p class="section-label">Ismerd meg</p>
-          <h2 class="section-heading">Ki vagyok én?</h2>
-          <p>Mozgás és önismeret – ez vezérelt mindig. Gyermekkoromban művészi tornáztam, jazz-balettoztam, majd
-            aerobikot oktattam 15 éven át. Az igazi fordulópont a jóga lett: 2006-ban egy 21 napos indiai kurzus mélyen
-            átformálta a testhez és az elméhez való kapcsolatomat.</p>
-          <p>Az első jógaórán rájöttem, hogy a mozgás és a meditáció együtt is működik– ez lett az én utam. Azóta sorra
-            végeztem különböző jóga- és fasciális képzéseket, és az integrált manuálterápiát is alkalmazom egyéni
-            kezeléseken.</p>
-          <p>A jóga nem csak mozgás: a test, az idegrendszer és a lélek harmóniáját hozza el. Az óráimon és táboraimban
-            a pillanatnyi élményekre és az önismeretre fókuszálunk. A jóga életmód: hatással van a mindennapjainkra.</p>
-          <p>Csatlakozz az órákhoz vagy a táborhoz, és tapasztald meg a jóga és a közösség transzformáló erejét!</p>
-          <div class="badge-row">
-            <span class="badge">Gerincjóga</span>
-            <span class="badge">Hatha jóga</span>
-            <span class="badge">Jóga flow oktató</span>
-            <span class="badge">Fasciális jógaterapeuta</span>
-            <span class="badge">Jóga mozgásterapeuta</span>
-            <span class="badge">Ashtanga jógaoktató</span>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="section">
+    <div class="row">
+      <h1 class="light">Jógaórák</h1>
+    </div>
 
-    <section class="landing-services">
-      <div class="landing-services-inner">
-        <div class="services-header reveal">
-          <p class="section-label">Szolgáltatások</p>
-          <h2 class="section-heading">Hogyan gyakorolhatsz velem?</h2>
-        </div>
-        <div class="cards-row">
-          <div class="service-card reveal">
-            <span class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--terra)"
-                stroke-width="1.5">
-                <path d="M3 21h18" />
-                <path d="M5 21V7l7-4 7 4v14" />
-                <path d="M9 21v-6h6v6" />
-              </svg></span>
-            <h3>Csoportos óra – Budapest</h3>
-            <p>Samadhi Jógastúdió, Budapest XIII., Dráva u. 17. Flow jóga és Yoga dream flow jógaórák –
-              lépésenként haladunk a könnyebb gyakorlatoktól a nehezebb ászanák felé.</p>
-            <a href="/orak" class="card-cta">Órarend megtekintése →</a>
-          </div>
-          <div class="service-card reveal">
-            <span class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--terra)"
-                stroke-width="1.5">
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg></span>
-            <h3>Egyéni óra – Budapest</h3>
-            <p>Egyéni órák és kezelések, csak neked. Akár hátfájás, tartási problémák, vagy mélyebb ászana-gyakorlás
-              a célod – az egyéni óra rólad szól.</p>
-            <a href="#a-kapcsolat" class="card-cta">Időpontot foglalok →</a>
-          </div>
-          <div class="service-card reveal">
-            <span class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--terra)"
-                stroke-width="1.5">
-                <rect x="2" y="3" width="20" height="14" rx="2" />
-                <line x1="8" y1="21" x2="16" y2="21" />
-                <line x1="12" y1="17" x2="12" y2="21" />
-              </svg></span>
-            <h3>Online jóga – videók &amp; élő órák</h3>
-            <p>130+ felvett jógavideó és rendszeres live alkalmak. Gyakorolj akkor, amikor neked jó – otthonról,
-              bármilyen eszközön. Magyar nyelvű, tematikus órák.</p>
-            <a href="/video" class="card-cta">Videók megtekintése →</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="row">
+      <div class="col s12 m6">
 
-    <section class="landing-events">
-      <div class="landing-events-inner">
-        <div class="events-header reveal">
-          <p class="section-label">Programok</p>
-          <h2 class="section-heading">Közelgő alkalmak</h2>
-        </div>
-        <div class="events-grid">
-          <div class="event-card reveal">
-            <div class="event-image"><img src="img/Flowtabor_borito.webp" alt="Jóga elvonulás" /></div>
-            <div class="event-content">
-              <span class="event-date">Szervezés alatt</span>
-              <h3>Jóga, önismeret és meditáció elvonulás</h3>
-              <p>Nézz bele az előző táborainkba!</p>
-              <a href="/tabor" class="card-cta">Részletek →</a>
-            </div>
-          </div>
-          <div class="event-card reveal">
-            <div class="event-image"><img src="img/kreativ26.webp" alt="Kreatív Tavaszi Flow" /></div>
-            <div class="event-content">
-              <span class="event-date">2026. április 29. 9:00</span>
-              <h3>Kreatív Tavaszi Flow</h3>
-              <p>5 alkalmas online flow jóga sorozat. Tarts velem szerda reggelenként!</p>
-              <a href="/orak" class="card-cta">Részletek →</a>
-            </div>
-          </div>
-          <div class="event-card reveal">
-            <div class="event-image"><img src="img/2025kepzes.webp" alt="Fascia képzés" /></div>
-            <div class="event-content">
-              <span class="event-date">2026. október 10.</span>
-              <h3>Fascia a jógában - oktatói továbbképzés</h3>
-              <p>Akkreditált oktatói továbbképzés jógaoktatóknak.</p>
-              <a href="/kepzes" class="card-cta">Részletek →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="community">
-      <div class="community-inner reveal">
-        <h2 class="section-heading">Csatlakozz az online közösséghez!</h2>
-        <p>Inspiráció, tippek, legújabb órák és események. Egy támogató közösség, ahol jófej jógik támogatják egymást.
+        <p class="light justify-text">
+          Az óráim flow jellegűek, dinamikusak, de mégis tudatosak. Szeretem tematikus keretbe helyezni a gyakorlást: az aktuális tanulmányaim és a ti visszajelzéseitek egyaránt ihletet adnak egy-egy óra témájához.
         </p>
-        <div class="community-buttons">
-          <a href="https://www.facebook.com/czvikliizs" target="_blank" rel="noopener" class="btn-white"><i
-              class="icon-facebook-official"></i> Facebook oldal</a>
-          <a href="https://www.facebook.com/groups/1618733441743789" target="_blank" rel="noopener" class="btn-white"><i
-              class="icon-facebook-official"></i> Jógázz mindennap csoport</a>
-          <a href="https://www.instagram.com/czviklizs.yoga/" target="_blank" rel="noopener" class="btn-white"><i
-              class="icon-instagram"></i> Instagram</a>
-        </div>
+        <p class="light justify-text">
+          Az összeállítás mindig lépésről lépésre épül: a könnyebb gyakorlatoktól haladunk az összetettebb ászanák felé, és minden nehezebb variációhoz kínálok egyszerűbb visszatérési lehetőséget. Intenzív, változatos gyakorlásra számíthatsz, relaxációval és ülőmeditációval zárva.
+        </p>
+        <p class="light justify-text">
+          Élő órákat a <strong>Samadhi Jógastúdióban</strong> tartok: Budapest, XIII. kerület, Dráva u. 17.<br><br>
+          Keddenként 19.30<br>
+          Csütörtökönként 17.30
+        </p>
+        <p class="light justify-text">
+          Bejelentkezés szükséges:
+          <a target="_blank" href="https://www.samadhijoga.hu">samadhijoga.hu</a>.
+        </p>
       </div>
-    </section>
 
+      <div class="col s12 m6">
+        <p>
+          <img class="responsive-img img-border" style="margin-top: 5px;" width="600px" height="400px"
+            src="img/mas_p_600x400.jpg" />
+        </p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <h5 class="light">Kreatív Tavaszi Flow - 5 alkalmas online jóga sorozat</h5>
+    </div>
+    <div class="row">
+      <div class="col s12 m12">
+        <p class="light justify-text">
+          A tavasz a lehetőségek ideje. Ahogy a rügyek kipattannak, úgy vágyik a lelked is a nyitásra, a színekre és a friss mozdulatokra.
+        </p>
+        <p class="light justify-text">
+          Ez a 5 alkalmas online flow jóga sorozat arra hív, hogy a matracodon találd meg azt a belső rugalmasságot, ami segít átültetni a tavaszi megújulás energiáját a mindennapjaidba.
+        </p>
+        <p class="light justify-text">
+          Tarts velem szerda reggelenként, és indítsd a napod egy olyan áramlással, ami feltölt, inspirál és segít kapcsolódni a saját kreatív forrásodhoz.
+        </p>
+
+        <p class="light justify-text">
+          ✨ <b>Időpontok és témák:</b><br>
+          A folyamat során a fizikai gyakorlást az önismereti mélyüléssel ötvözzük:
+        </p>
+
+        <p class="light justify-text" style="padding-left: 16px; border-left: 3px solid var(--gold); margin-bottom: 10px;">
+          <b>Április 29. 9:00</b> - <b>Ébredő magvak:</b> A stabilitás és a türelem gyakorlása. Megkeressük az alapokat, amikből az új ötleteid és energiáid kisarjadnak.
+        </p>
+        <p class="light justify-text" style="padding-left: 16px; border-left: 3px solid var(--gold); margin-bottom: 10px;">
+          <b>Május 6. 9:00</b> - <b>Kreatív hajtások:</b> A játékosság és a rugalmasság flowja. Engedd, hogy a mozdulatok szabadon, elvárások nélkül szülessenek meg.
+        </p>
+        <p class="light justify-text" style="padding-left: 16px; border-left: 3px solid var(--gold); margin-bottom: 10px;">
+          <b>Május 13. 9:00</b> - <b>Színes áramlás:</b> Érzelmi tisztulás és frissesség. Mint a tavaszi zápor, úgy mossuk át a testünket és a gondolatainkat a légzés erejével.
+        </p>
+        <p class="light justify-text" style="padding-left: 16px; border-left: 3px solid var(--gold); margin-bottom: 10px;">
+          <b>Május 20. 9:00</b> - <b>Napfényes kiterjedés:</b> Erő és ragyogás. Megtapasztaljuk a saját belső tüzünket, ami segít formába önteni a vágyainkat.
+        </p>
+        <p class="light justify-text" style="padding-left: 16px; border-left: 3px solid var(--gold); margin-bottom: 10px;">
+          <b>Május 27. 9:00</b> - <b>Teljes virágzás:</b> Hála és bőség. Megünnepeljük a megtett utat és megérkezünk a jelen pillanat teljességébe.
+        </p>
+
+        <p class="light justify-text">
+          💻 <b>Praktikus információk:</b><br>
+          Az órákat egy zárt Facebook csoportban közvetítem élőben, itt tudsz csatlakozni a közösségünkhöz:<br>
+          👉 Kreatív Tavaszi Flow Zárt Csoport:
+          <a target="_blank" href="https://www.facebook.com/groups/1461990561664800">https://www.facebook.com/groups/1461990561664800</a>
+        </p>
+        <p class="light justify-text">
+          <b>Visszanézhetőség:</b> Az órák 60 percesek. Ha nem érsz rá szerda reggel 9-kor, az összes gyakorlást bármikor, korlátlanul visszanézheted egészen május 31-ig!
+        </p>
+
+        <p class="light justify-text">
+          💰 <b>Részvételi díj:</b><br>
+          A 5 alkalmas kurzus ára: <b>15.000 Ft</b> vagy <b>40 €</b>
+        </p>
+
+        <p class="light justify-text">
+          💳 <b>Jelentkezés és utalás:</b><br>
+          A helyedet az utalással tudod biztosítani. Kérlek, az alábbi adatok egyikére küldd el az összeget:<br>
+          Név: Czvikli Zsuzsanna<br>
+          Bank: OTP 11773061-08183116<br>
+          Revolut: czviklizs
+        </p>
+
+        <p class="light justify-text">
+          <b>Találkozzunk szerdán a matracon!</b>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <h5 class="light">Online jóga órák</h5>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <p class="light justify-text">
+          Az aktuális, élőben közvetített online óráimról a Facebook-oldalamon értesülhetsz.
+        </p>
+        <p class="light justify-text">
+          A Videó-tárból is válogathatsz: a jogokhoz gmail-cím szükséges, időkorlát nélkül adom, aktuális árakért érdeklődj privát üzenetben.
+        </p>
+        <p class="light justify-text">
+          Az online jóga más, mint személyesen együtt gyakorolni, de megvannak a maga varázslatos előnyei:
+        </p>
+        <p class="light justify-text">
+          Jógázhatsz otthonról, bármelyik szobádban, a teraszon vagy a kertben, menő jógaruha nélkül, akár pizsiben is. Nem kell sehova rohanni: akkor kezdesz, amikor neked a legjobb, és a belső csendedben addig maradsz, ameddig jólesik.
+        </p>
+        <p class="light justify-text">
+          Ha messze laksz, vagy valamelyik gyakorlatot ki szeretnéd hagyni, módosítani, megteheted, teljesen szabadon. Az órákat később is visszanézheted, bármikor újra gyakorolhatsz rájuk.
+        </p>
+        <p class="light justify-text">
+          Az ár is lehet rugalmas, ha rosszul állsz anyagilag de nagyon szeretnél velem gyakorolni, írj nekem.
+        </p>
+        <p class="light justify-text">
+          És bár egyedül vagy otthon, mégis egy valódi közösség részévé válsz.
+        </p>
+        <p class="light justify-text">
+          Alkalmanként online workshopokat és tematikus órákat is tartok – a részleteket a Facebook oldalamon találod.
+        </p>
+        <p>
+          <i class="icon-facebook-official"></i>
+          <a target="_blank" href="https://www.facebook.com/groups/1618733441743789">Facebook Jógázz mindennap zárt
+            csoport</a>
+        </p>
+      </div>
+
+      <div class="col s12 m6">
+        <p>
+          <img class="responsive-img img-border" style="margin-top: 5px;" width="600px" height="782px"
+            src="img/oraim_fotoq.webp" />
+        </p>
+
+      </div>
+    </div>
   </div>
-
-  <div id="pageContent"></div>
+</div>
+</div>
 
   <footer id="a-kapcsolat" class="premium-footer">
     <div class="pfooter-inner">
@@ -362,17 +357,14 @@
     </div>
   </div>
 
+  <script src="js/videolist.js"></script>
+  <script src="js/video_yt_au.js"></script>
+  <script src="js/handlebars.runtime.min-v4.7.7.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/templates.js?t=1712604000009"></script>
+  <script src="js/seo-data.js"></script>
+  <script src="js/router.js"></script>
+
 </body>
 
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKF8Z2P" height="0" width="0"
-    style="display: none; visibility: hidden"></iframe></noscript>
-
 </html>
-
-<script src="js/videolist.js"></script>
-<script src="js/video_yt_au.js"></script>
-<script src="js/handlebars.runtime.min-v4.7.7.js"></script>
-<script src="js/menu.js"></script>
-<script src="js/templates.js?t=1712604000009"></script>
-
-<script src="js/router.js"></script>

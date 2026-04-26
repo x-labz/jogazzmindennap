@@ -12,13 +12,19 @@
 
         <p>Ha már kaptál jogosultságot, ne felejts el bejelentkezni a google
           fiókodba! 👉<a href="https://myaccount.google.com" >Bejelentkezés</a></p>
-        
-        
+
+
         <div class="videos">
           {{#each items}}
           <div>
             <div class="thumb img-border">
-
+              {{#if this.youtube}}
+              <a target="_blank" href="https://www.youtube.com/watch?v={{this.youtube}}">
+              {{/if}}
+                <img width="320px" height="180px" class="responsive-img" src="thumbs/jv{{this.id}}tn.{{#if this.ext}}{{this.ext}}{{else}}jpg{{/if}}">
+              {{#if this.youtube}}
+              </a>
+              {{/if}}
             </div>
             <p class="desc">{{this.title}}</p>
           </div>

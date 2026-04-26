@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="hu" class="is-spa-page">
+
+<head>
+  <base href="/" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script>
+    // Prevent homepage flash on SPA page reload
+    (function () {
+      var p = location.pathname.replace(/^\//, '').replace(/\/$/, '');
+      if (p && p !== 'index.html') {
+        document.documentElement.classList.add('is-spa-page');
+      }
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adatvédelem | Czvikli Zsuzsanna</title>
+  <meta name="description" content="Adatvédelmi irányelvek és tájékoztató." />
+  <meta property="og:title" content="Adatvédelem | Czvikli Zsuzsanna" />
+  <meta property="og:description" content="Adatvédelmi irányelvek és tájékoztató." />
+  <meta property="og:url" content="https://www.jogazzmindennap.hu/privacy" />
+  <meta property="og:image" content="https://www.jogazzmindennap.hu/img/hero_zs.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Adatvédelem | Czvikli Zsuzsanna" />
+  <meta name="twitter:description" content="Adatvédelmi irányelvek és tájékoztató." />
+  <meta name="twitter:image" content="https://www.jogazzmindennap.hu/img/hero_zs.webp" />
+  <link rel="canonical" href="https://www.jogazzmindennap.hu/privacy" />
+  <script type="application/ld+json" id="structured-data">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Adatvédelem | Czvikli Zsuzsanna",
+  "url": "https://www.jogazzmindennap.hu/privacy",
+  "image": "https://www.jogazzmindennap.hu/img/hero_zs.webp",
+  "description": "Adatvédelmi irányelvek és tájékoztató."
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#C9893A" />
+  <meta name="msapplication-TileColor" content="#C9893A" />
+  <meta name="theme-color" content="#FAF4EC" />
+
+  <link rel="preload" href="css/fontello.css" as="style" />
+  <link href="css/fontello.css" type="text/css" rel="stylesheet" />
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js",
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-TKF8Z2P");
+  </script>
+</head>
+
+<body class="spa-active">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKF8Z2P" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="/" class="navbar-logo">
+        <img src="img/czs-flow-3-256.png" alt="Logo" class="navbar-logo-img" />
+        <span class="navbar-logo-text">Jógázz minden nap!</span>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="/aktualis">Aktuális</a></li>
+        <li><a href="/rolam">Rólam</a></li>
+        <li><a href="/orak">Óráim</a></li>
+        <li><a href="/video">Jóga videók</a></li>
+        <li><a href="/fasciaflow">Fascia flow</a></li>
+        <li><a href="/manual">Kezelések</a></li>
+        <li><a href="/kepzes">Képzés</a></li>
+        <li><a href="/tabor">Tábor</a></li>
+        <li><a href="/bars">Access Bars®</a></li>
+        <li><a href="/ebook">E-book</a></li>
+        <li><a href="#a-kapcsolat">Kapcsolat</a></li>
+      </ul>
+      <button class="navbar-hamburger" id="navHamburger" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="navbar-mobile" id="navMobile">
+    <a href="/" class="navbar-mobile-link navbar-mobile-home">Kezdőlap</a>
+    <a href="/aktualis" class="navbar-mobile-link">Aktuális</a>
+    <a href="/rolam" class="navbar-mobile-link">Rólam</a>
+    <a href="/orak" class="navbar-mobile-link">Óráim</a>
+    <a href="/video" class="navbar-mobile-link">Jóga videók</a>
+    <a href="/fasciaflow" class="navbar-mobile-link">Fascia flow</a>
+    <a href="/manual" class="navbar-mobile-link">Kezelések</a>
+    <a href="/kepzes" class="navbar-mobile-link">Képzés</a>
+    <a href="/tabor" class="navbar-mobile-link">Tábor</a>
+    <a href="/bars" class="navbar-mobile-link">Access Bars®</a>
+    <a href="/ebook" class="navbar-mobile-link">E-book</a>
+    <a href="#a-kapcsolat" class="navbar-mobile-link">Kapcsolat</a>
+  </div>
+
+  <div id="landingSections" class="hidden" aria-hidden="true"></div>
+
+  <div id="pageContent"><div class="container">
+    <div class="section">
+        <h1>Privacy Policy for Jógázz minden nap!</h1>
+
+        <p>At Jógázz minden nap!, accessible from https://jogazzmindennap.hu, one of our main priorities is
+            the privacy of our visitors. This Privacy Policy document contains types of information that is collected
+            and recorded by Jógázz minden nap! and how we use it.</p>
+
+        <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to
+            contact us.</p>
+
+        <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with
+            regards to the information that they shared and/or collect in Jógázz minden nap!. This policy is not
+            applicable to any information collected offline or via channels other than this website.</p>
+
+        <h2>Consent</h2>
+
+        <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+
+        <h2>Information we collect</h2>
+
+        <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will
+            be made clear to you at the point we ask you to provide your personal information.</p>
+        <p>If you contact us directly, we may receive additional information about you such as your name, email address,
+            phone number, the contents of the message and/or attachments you may send us, and any other information you
+            may choose to provide.</p>
+        <p>When you register for an Account, we may ask for your contact information, including items such as name,
+            company name, address, email address, and telephone number.</p>
+
+        <h2>Third party services we use</h2>
+        <h3>Facebook authentication</h3>
+        <p>The user's e-mail address and display name is received from the Facebook authentication service. This
+            information is used to give authorization for the restricted contents.</p>
+
+        <h3>Google analytics</h3>
+        <p>The general usage information is collected by this service to provide us with usage statistics.</p>
+
+        <h2>How we use your information</h2>
+
+        <p>We use the information we collect in various ways, including to:</p>
+
+        <ul>
+            <li>Provide, operate, and maintain our webste</li>
+            <li>Improve, personalize, and expand our webste</li>
+            <li>Understand and analyze how you use our webste</li>
+            <li>Develop new products, services, features, and functionality</li>
+
+        </ul>
+
+        <h2>Log Files</h2>
+
+        <p>Jógázz minden nap! follows a standard procedure of using log files. These files log visitors when they visit
+            websites. All hosting companies do this and a part of hosting services' analytics. The information collected
+            by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date
+            and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any
+            information that is personally identifiable. The purpose of the information is for analyzing trends,
+            administering the site, tracking users' movement on the website, and gathering demographic information. Our
+            Privacy Policy was created with the help of the <a href="https://www.privacypolicygenerator.info">Privacy
+                Policy Generator</a> and the <a
+                href="https://www.privacypolicyonline.com/privacy-policy-generator/">Online Privacy Policy
+                Generator</a>.</p>
+
+        <h2>Cookies and Web Beacons</h2>
+
+        <p>Like any other website, Jógázz minden nap! uses 'cookies'. These cookies are used to store information
+            including visitors' preferences, and the pages on the website that the visitor accessed or visited. The
+            information is used to optimize the users' experience by customizing our web page content based on visitors'
+            browser type and/or other information.</p>
+
+        <p>For more general information on cookies, please read <a
+                href="https://www.cookieconsent.com/what-are-cookies/">"What Are Cookies"</a>.</p>
+
+
+        <h2>Third Party Privacy Policies</h2>
+
+        <p>Jógázz minden nap!'s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising
+            you to consult the respective Privacy Policies of these third-party ad servers for more detailed
+            information. It may include their practices and instructions about how to opt-out of certain options. </p>
+
+        <p>You can choose to disable cookies through your individual browser options. To know more detailed information
+            about cookie management with specific web browsers, it can be found at the browsers' respective websites.
+        </p>
+
+        <h2>CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
+
+        <p>Under the CCPA, among other rights, California consumers have the right to:</p>
+        <p>Request that a business that collects a consumer's personal data disclose the categories and specific pieces
+            of personal data that a business has collected about consumers.</p>
+        <p>Request that a business delete any personal data about the consumer that a business has collected.</p>
+        <p>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</p>
+        <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these
+            rights, please contact us.</p>
+
+        <h2>GDPR Data Protection Rights</h2>
+
+        <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled
+            to the following:</p>
+        <p>The right to access – You have the right to request copies of your personal data. We may charge you a small
+            fee for this service.</p>
+        <p>The right to rectification – You have the right to request that we correct any information you believe is
+            inaccurate. You also have the right to request that we complete the information you believe is incomplete.
+        </p>
+        <p>The right to erasure – You have the right to request that we erase your personal data, under certain
+            conditions.</p>
+        <p>The right to restrict processing – You have the right to request that we restrict the processing of your
+            personal data, under certain conditions.</p>
+        <p>The right to object to processing – You have the right to object to our processing of your personal data,
+            under certain conditions.</p>
+        <p>The right to data portability – You have the right to request that we transfer the data that we have
+            collected to another organization, or directly to you, under certain conditions.</p>
+        <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these
+            rights, please contact us.</p>
+
+        <h2>Children's Information</h2>
+
+        <p>Another part of our priority is adding protection for children while using the internet. We encourage parents
+            and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+
+        <p>Jógázz minden nap! does not knowingly collect any Personal Identifiable Information from children under the
+            age of 13. If you think that your child provided this kind of information on our website, we strongly
+            encourage you to contact us immediately and we will do our best efforts to promptly remove such information
+            from our records.</p>
+    </div>
+</div></div>
+
+  <footer id="a-kapcsolat" class="premium-footer">
+    <div class="pfooter-inner">
+      <div class="pfooter-row">
+        <div class="pfooter-col">
+          <h5>Kapcsolat</h5>
+          <p>
+            <i class="icon-facebook-official"></i>
+            <a target="_blank" href="https://www.facebook.com/groups/1618733441743789">Facebook Jógázz mindennap zárt
+              csoport</a>
+          </p>
+          <p>
+            <i class="icon-facebook-official"></i>
+            <a target="_blank" href="https://www.facebook.com/czvikliizs">Czvikli Zsuzsanna Jógaoktató</a>
+          </p>
+          <p>
+            <i class="icon-instagram"></i>
+            <a target="_blank" href="https://www.instagram.com/czviklizs.yoga/">Instagram</a>
+          </p>
+          <p>
+            <i class="icon-mail"></i>
+            <a href="mailto:czviklizsuzsanna@gmail.com">czviklizsuzsanna@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="pfooter-bottom">
+        <span>© 2026 Jógázz minden nap. Minden jog fenntartva.</span>
+        <span>
+          <a href="/credits">credits</a>&nbsp;|&nbsp;
+          <a href="/privacy">privacy policy</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="scroll-top btn-floating"><i class="icon-up-circled2"></i></div>
+
+  <div class="cookie">
+    <div>
+      A weblap ártalmatlan<br />sütiket használ <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" style="vertical-align:middle">
+        <circle cx="12" cy="12" r="10" />
+        <circle cx="8" cy="9" r="1" fill="currentColor" />
+        <circle cx="15" cy="8" r="1" fill="currentColor" />
+        <circle cx="10" cy="15" r="1" fill="currentColor" />
+        <circle cx="16" cy="14" r="1" fill="currentColor" />
+        <circle cx="12" cy="11" r="1" fill="currentColor" />
+      </svg>
+      <div><button>Elfogadom</button></div>
+      <div><a href="/privacy" class="">adatvédelmi irányelvek</a></div>
+    </div>
+  </div>
+
+  <script src="js/videolist.js"></script>
+  <script src="js/video_yt_au.js"></script>
+  <script src="js/handlebars.runtime.min-v4.7.7.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/templates.js?t=1712604000009"></script>
+  <script src="js/seo-data.js"></script>
+  <script src="js/router.js"></script>
+
+</body>
+
+</html>
