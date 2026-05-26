@@ -29,7 +29,7 @@
     aktualis: {
       title: "Aktuális események | Czvikli Zsuzsanna",
       description: "Aktuális jóga események, online sorozatok, képzések és elvonulások Czvikli Zsuzsannával.",
-      canonical: BASE_URL + "/aktualis",
+      canonical: BASE_URL + "/aktualis/",
       image: BASE_URL + "/img/kreativ26.webp",
       priority: "0.9",
       changefreq: "weekly",
@@ -37,7 +37,7 @@
     orak: {
       title: "Jógaórák | Czvikli Zsuzsanna",
       description: "Flow jóga Budapesten és online. Csoportos jógaórák, Kreatív Tavaszi Flow online sorozat. Samadhi Jóga Stúdió, Budapest XIII. ker.",
-      canonical: BASE_URL + "/orak",
+      canonical: BASE_URL + "/orak/",
       image: BASE_URL + "/img/mas_p_600x400.jpg",
       priority: "0.9",
       changefreq: "weekly",
@@ -45,7 +45,7 @@
     kepzes: {
       title: "Jógaoktató képzés | Czvikli Zsuzsanna",
       description: "100 órás akkreditált Flow Jóga oktatói képzés és Fascia a jógában továbbképzés jógaoktatóknak. Budapest, Samadhi Jóga Stúdió.",
-      canonical: BASE_URL + "/kepzes",
+      canonical: BASE_URL + "/kepzes/",
       image: BASE_URL + "/img/kepzes_2026.webp",
       priority: "0.8",
       changefreq: "monthly",
@@ -53,7 +53,7 @@
     manual: {
       title: "Kezelések | Czvikli Zsuzsanna",
       description: "Fasciális arcterápia, fasciális jógaterápia és integrált manuális terápia. Budapest, XIII. ker., VI. ker., Csömör.",
-      canonical: BASE_URL + "/manual",
+      canonical: BASE_URL + "/manual/",
       image: BASE_URL + "/img/manual11.webp",
       priority: "0.8",
       changefreq: "monthly",
@@ -61,7 +61,7 @@
     rolam: {
       title: "Rólam | Czvikli Zsuzsanna jógaoktató",
       description: "Czvikli Zsuzsanna jógaoktató, 30 év tapasztalattal. Fasciális jógaterapeuta, integrál tanácsadó. Hatha, Flow, Ashtanga, Vinyasa.",
-      canonical: BASE_URL + "/rolam",
+      canonical: BASE_URL + "/rolam/",
       image: BASE_URL + "/img/czs_rolam.jpg",
       priority: "0.8",
       changefreq: "monthly",
@@ -69,7 +69,7 @@
     tabor: {
       title: "Jóga elvonulás | Czvikli Zsuzsanna",
       description: "Jóga, önismeret és meditáció elvonulás. Többnapos tábor jógával, meditációval és önismereti programokkal.",
-      canonical: BASE_URL + "/tabor",
+      canonical: BASE_URL + "/tabor/",
       image: BASE_URL + "/img/tabor_foto_2026.png",
       priority: "0.7",
       changefreq: "monthly",
@@ -77,7 +77,7 @@
     video: {
       title: "Jóga videók | Czvikli Zsuzsanna",
       description: "130+ jóga videó magyarul. Hatha, Flow, Ashtanga, Vinyasa jóga videók. Korlátlan visszanézhetőség.",
-      canonical: BASE_URL + "/video",
+      canonical: BASE_URL + "/video/",
       image: BASE_URL + "/img/flowborito_s.jpg",
       priority: "0.8",
       changefreq: "weekly",
@@ -85,7 +85,7 @@
     fasciaflow: {
       title: "Fascia Flow videók | Czvikli Zsuzsanna",
       description: "Otthoni fascia flow videó csomag. Kötőszöveti mozgás és lazítás otthonról, bármikor.",
-      canonical: BASE_URL + "/fasciaflow",
+      canonical: BASE_URL + "/fasciaflow/",
       image: BASE_URL + "/img/fascia-tricon.webp",
       priority: "0.7",
       changefreq: "monthly",
@@ -93,7 +93,7 @@
     ebook: {
       title: "108 inspiráció e-book | Czvikli Zsuzsanna",
       description: "108 inspiráció jógaórákhoz e-book. Jógaoktatók és gyakorlók számára.",
-      canonical: BASE_URL + "/ebook",
+      canonical: BASE_URL + "/ebook/",
       image: BASE_URL + "/img/108-37.png",
       priority: "0.6",
       changefreq: "monthly",
@@ -101,7 +101,7 @@
     bars: {
       title: "Access Bars kezelés | Czvikli Zsuzsanna",
       description: "Access Bars® kezelés Budapesten. Relaxáció és stresszoldás az idegrendszer szintjén.",
-      canonical: BASE_URL + "/bars",
+      canonical: BASE_URL + "/bars/",
       image: DEFAULT_IMAGE,
       priority: "0.6",
       changefreq: "monthly",
@@ -109,7 +109,7 @@
     privacy: {
       title: "Adatvédelem | Czvikli Zsuzsanna",
       description: "Adatvédelmi irányelvek és tájékoztató.",
-      canonical: BASE_URL + "/privacy",
+      canonical: BASE_URL + "/privacy/",
       image: DEFAULT_IMAGE,
       priority: "0.1",
       changefreq: "yearly",
@@ -117,7 +117,7 @@
     jem: {
       title: "JEM | Czvikli Zsuzsanna",
       description: "Jógázz minden nap - JEM",
-      canonical: BASE_URL + "/jem",
+      canonical: BASE_URL + "/jem/",
       image: DEFAULT_IMAGE,
       priority: "0.1",
       changefreq: "yearly",
@@ -125,7 +125,7 @@
     jelentkezes: {
       title: "Jelentkezés | Czvikli Zsuzsanna",
       description: "Jelentkezés eseményekre és programokra.",
-      canonical: BASE_URL + "/jelentkezes",
+      canonical: BASE_URL + "/jelentkezes/",
       image: DEFAULT_IMAGE,
       priority: "0.4",
       changefreq: "monthly",
@@ -133,7 +133,7 @@
     credits: {
       title: "Credits | Czvikli Zsuzsanna",
       description: "Oldal készítői és hivatkozások.",
-      canonical: BASE_URL + "/credits",
+      canonical: BASE_URL + "/credits/",
       image: DEFAULT_IMAGE,
       priority: "0.1",
       changefreq: "yearly",
